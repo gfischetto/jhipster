@@ -106,7 +106,7 @@ mailagent:
       exchange_name: EXCHANGE_DOWNLOAD
       exchange_type: topic
       queue_routing_key: ROUTCODA
-      server_host_name: 10.10.252.52
+      server_host_name: akronext-rabbitmq
       server_password: download
       server_port: 5672
       server_user_name: download
