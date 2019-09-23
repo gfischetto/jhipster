@@ -100,6 +100,7 @@ filemanager:
        hikari:
            auto-commit: false
 mailagent:
+  autostart: false            #se a true parte il servizio di download all'avvio dell'applicazione
   destination:
     rabbitmq:
       exchange_durable: true
