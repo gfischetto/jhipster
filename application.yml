@@ -101,6 +101,7 @@ filemanager:
            auto-commit: false
 mailagent:
   autostart: false            #se a true parte il servizio di download all'avvio dell'applicazione
+  oneshot: true               #se a true il servizio di download girerà una sola volta e poi terminerà
   destination:
     rabbitmq:
       exchange_durable: true
