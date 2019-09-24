@@ -112,7 +112,6 @@ mailagent:
        port: 143       
        ssl_enable: false
        socketFactory_fallback: false
-          
     imap[1]:
        starttls_enable: false
        socket_factory_port: 993
