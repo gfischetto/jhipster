@@ -102,6 +102,27 @@ filemanager:
 mailagent:
   autostart: false            #se a true parte il servizio di download all'avvio dell'applicazione
   oneshot: true               #se a true il servizio di download girerà una sola volta e poi terminerà
+  imap[0]:
+       starttls_enable: false
+       socket_factory_port: 143
+       address: info@wleapi.net
+       user: info@wleapi.net
+       password: Giugno2019
+       host: mail.register.it
+       port: 143       
+       ssl_enable: false
+       socketFactory_fallback: false
+          
+    imap[1]:
+       starttls_enable: false
+       socket_factory_port: 993
+       address: Dm.test@pec.it
+       user: Dm.test@pec.it
+       password: Giugno2019
+       host: imaps.pec.aruba.it
+       port: 993       
+       ssl_enable: true
+       socketFactory_fallback: false                 
   destination:
     rabbitmq:
       exchange_durable: true
@@ -112,16 +133,6 @@ mailagent:
       server_password: download
       server_port: 5672
       server_user_name: download
-  imap:
-    address: info@wleapi.net
-    host: mail.register.it
-    password: Giugno2019
-    port: 143
-    socketFactory_fallback: false
-    socket_factory_port: 143
-    ssl_enable: false
-    starttls_enable: false
-    user: info@wleapi.net
   transport:
     action_after_process: move
     content_type: text/plain
