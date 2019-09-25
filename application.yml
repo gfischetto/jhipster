@@ -130,8 +130,8 @@ mailagent:
     #  ssl_enable: true
     #  starttls_enable: false
     #  user: Dm.test@pec.it           
-destination:
-  rabbitmq:
+  destination:
+    rabbitmq:
       exchange_durable: true
       exchange_name: EXCHANGE_DOWNLOAD
       exchange_type: topic
@@ -140,7 +140,7 @@ destination:
       server_password: download
       server_port: 5672
       server_user_name: download
-transport:
+  transport:
     action_after_process: move
     content_type: text/plain
     folder: inbox
