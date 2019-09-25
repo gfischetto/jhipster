@@ -116,7 +116,7 @@ mailagent:
        socket_factory_port: 143
        address: info@wleapi.net
        user: info@wleapi.net
-       password: *****
+       password: Giugno2019
        host: mail.register.it
        port: 143       
        ssl_enable: false
@@ -126,7 +126,7 @@ mailagent:
        socket_factory_port: 993
        address: Dm.test@pec.it
        user: Dm.test@pec.it
-       password: *****
+       password: Giugno2019
        host: imaps.pec.aruba.it
        port: 993       
        ssl_enable: true
