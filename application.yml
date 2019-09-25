@@ -121,6 +121,15 @@ mailagent:
       ssl_enable: false
       starttls_enable: false
       user: info@wleapi.net
+    - address: info@wleapi.net
+      host: mail.register.it
+      password: Giugno2019
+      port: 143
+      socketFactory_fallback: false
+      socket_factory_port: 143
+      ssl_enable: false
+      starttls_enable: false
+      user: info@wleapi.net      
     #- address: Dm.test@pec.it
     #  host: imaps.pec.aruba.it
     #  password: Giugno2019
