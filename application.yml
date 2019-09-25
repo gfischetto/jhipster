@@ -121,15 +121,15 @@ mailagent:
       ssl_enable: false
       starttls_enable: false
       user: info@wleapi.net
-    - address: Dm.test@pec.it
-      host: imaps.pec.aruba.it
-      password: Giugno2019
-      port: 993
-      socketFactory_fallback: false
-      socket_factory_port: 993
-      ssl_enable: true
-      starttls_enable: false
-      user: Dm.test@pec.it           
+    #- address: Dm.test@pec.it
+    #  host: imaps.pec.aruba.it
+    #  password: Giugno2019
+    #  port: 993
+    #  socketFactory_fallback: false
+    #  socket_factory_port: 993
+    #  ssl_enable: true
+    #  starttls_enable: false
+    #  user: Dm.test@pec.it           
 destination:
   rabbitmq:
       exchange_durable: true
