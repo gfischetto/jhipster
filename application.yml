@@ -47,7 +47,7 @@ dm:
 # DM - Rabbit Config
 spring:
     rabbitmq:
-        host: akronext-rabbitmq
+        host: 10.10.252.52
         port: 5672
         password: guest
         username: guest
@@ -145,7 +145,7 @@ mailagent:
       exchange_name: EXCHANGE_DOWNLOAD
       exchange_type: topic
       queue_routing_key: ROUTCODA
-      server_host_name: akronext-rabbitmq
+      server_host_name: 10.10.252.52
       server_password: download
       server_port: 5672
       server_user_name: download
