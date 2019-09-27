@@ -16,7 +16,7 @@ jhipster:
     logging:
         logstash:
             enabled: true
-            host: 10.10.252.54
+            host: 10.10.252.254
             port: 5000
             queueSize: 512
     metrics:
@@ -32,7 +32,7 @@ dm:
             host: 10.10.252.54
             port: 5000
             queueSize: 512
-            monitoringhost: 10.10.252.54
+            monitoringhost: 10.10.252.254
             monitoringport: 5000
             monitoringkey: Message-ID
             monitoringqueueSize: 512
@@ -47,7 +47,7 @@ dm:
 # DM - Rabbit Config
 spring:
     rabbitmq:
-        host: 10.10.252.52
+        host: 10.10.252.54
         port: 5672
         password: guest
         username: guest
@@ -145,7 +145,7 @@ mailagent:
       exchange_name: EXCHANGE_DOWNLOAD
       exchange_type: topic
       queue_routing_key: ROUTCODA
-      server_host_name: 10.10.252.52
+      server_host_name: 10.10.252.54
       server_password: download
       server_port: 5672
       server_user_name: download
