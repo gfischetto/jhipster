@@ -128,13 +128,13 @@ mailagent:
          content_type: text/plain
          folder: inbox
          move_after_process: inbox.processed
-      destination:
-        rabbitmq:
-          exchange_durable: true
-          exchange_name: EXCHANGE_DOWNLOAD
-          exchange_type: topic
-          queue_routing_key: ROUTCODA
-          server_host_name: 10.10.252.54
-          server_user_name: download    
-          server_password: download
-          server_port: 5672
+    destination:
+      rabbitmq:
+        exchange_durable: true
+        exchange_name: EXCHANGE_DOWNLOAD
+        exchange_type: topic
+        queue_routing_key: ROUTCODA
+        server_host_name: 10.10.252.54
+        server_user_name: download    
+        server_password: download
+        server_port: 5672
