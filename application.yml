@@ -123,11 +123,11 @@ mailagent:
       ssl_enable: false
       starttls_enable: false
       poll_interval: 1                    #frequenza, in secondi, di controllo posta
-      transport:
-         action_after_process: move
-         content_type: text/plain
-         folder: inbox
-         move_after_process: inbox.processed
+  transport:
+     action_after_process: move
+     content_type: text/plain
+     folder: inbox
+     move_after_process: inbox.processed
   destination:
     rabbitmq:
       exchange_durable: true
