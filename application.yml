@@ -111,48 +111,30 @@ filemanager:
 mailagent:
   autostart: true            #se a true parte il servizio di download all'avvio dell'applicazione
   oneshot: true               #se a true il servizio di download girerà una sola volta e poi terminerà
-  imap:
+  email:
     - address: info@wleapi.net
       host: mail.register.it
-      password: Giugno2019
-      port: 143
-      socketFactory_fallback: false
-      socket_factory_port: 143
-      ssl_enable: false
-      starttls_enable: false
       user: info@wleapi.net
-    - address: info@wleapi.net
-      host: mail.register.it
       password: Giugno2019
+      protocol: imap
       port: 143
       socketFactory_fallback: false
       socket_factory_port: 143
       ssl_enable: false
       starttls_enable: false
-      user: info@wleapi.net     
-    #- address: Dm.test@pec.it
-    #  host: imaps.pec.aruba.it
-    #  password: Giugno2019
-    #  port: 993
-    #  socketFactory_fallback: false
-    #  socket_factory_port: 993
-    #  ssl_enable: true
-    #  starttls_enable: false
-    #  user: Dm.test@pec.it           
-  destination:
-    rabbitmq:
-      exchange_durable: true
-      exchange_name: EXCHANGE_DOWNLOAD
-      exchange_type: topic
-      queue_routing_key: ROUTCODA
-      server_host_name: 10.10.252.54
-      server_password: download
-      server_port: 5672
-      server_user_name: download
-  transport:
-    action_after_process: move
-    content_type: text/plain
-    folder: inbox
-    move_after_process: inbox.processed
-    poll_interval: 1
-    protocol: imap
+      poll_interval: 1                    #frequenza, in secondi, di controllo posta
+      transport:
+         action_after_process: move
+         content_type: text/plain
+         folder: inbox
+         move_after_process: inbox.processed
+      destination:
+        rabbitmq:
+          exchange_durable: true
+          exchange_name: EXCHANGE_DOWNLOAD
+          exchange_type: topic
+          queue_routing_key: ROUTCODA
+          server_host_name: 10.10.252.54
+          server_user_name: download    
+          server_password: download
+          server_port: 5672
