@@ -110,7 +110,7 @@ filemanager:
            auto-commit: false
 mailagent:
   autostart: true            #se a true parte il servizio di download all'avvio dell'applicazione
-  oneshot: true               #se a true il servizio di download girerà una sola volta e poi terminerà
+  oneshot: false               #se a true il servizio di download girerà una sola volta e poi terminerà
   email:
     - address: info@wleapi.net
       host: mail.register.it
