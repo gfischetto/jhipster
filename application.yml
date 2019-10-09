@@ -102,10 +102,14 @@ mailgw:
 filemanager:
     datasource:
        type: com.zaxxer.hikari.HikariDataSource
-       driver: org.postgresql.Driver
-       url: jdbc:postgresql://dbFilemanager:5432/db_filemanager
-       username: postgres
-       password: password
+       #driver: org.postgresql.Driver
+       driver-class-name: oracle.jdbc.OracleDriver
+       #url: jdbc:postgresql://dbFilemanager:5432/db_filemanager
+       url: jdbc:oracle:thin:@//192.168.227.132:1521/ORCL.DMPA.ITA
+       #username: postgres
+       username: DM_CONDIV_ENTI_PAL
+       #password: password
+       password: cui2010
        hikari:
            auto-commit: false
 mailagent:
